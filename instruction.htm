@@ -12,16 +12,16 @@
     <style>
         /* Styles from previous layout with minor enhancements */
         :root {
-            --nigerian-green: #008751;
-            --nigerian-white: #ffffff;
-            --light-green: #e6f4ea;
-            --dark-green: #005a36;
-            --accent-gold: #FFD700;
+            --nigerian-green: #474747;
+            --nigerian-white: #a09f7f;
+            --light-green: #96a7ac;
+            --dark-green: #000000;
+            --accent-gold: #fdfdfd;
         }
         
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #777879 0%, #898a8b 100%);
             color: #333;
             min-height: 100vh;
             display: flex;
@@ -45,7 +45,7 @@
             width: 45px;
             height: 45px;
             border-radius: 50%;
-            background: white;
+            background: rgb(31, 22, 22);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -66,7 +66,7 @@
             font-weight: 500;
             letter-spacing: 0.5px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0, 135, 81, 0.3);
+            box-shadow: 0 4px 12px rgba(30, 37, 35, 0.3);
         }
         
         .btn-outline-primary {
@@ -80,12 +80,12 @@
         
         .btn-outline-primary:hover {
             background: var(--nigerian-green);
-            color: white;
+            color: rgb(105, 103, 103);
         }
         
         .btn-primary:hover, .btn-outline-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(0, 135, 81, 0.4);
+            box-shadow: 0 6px 15px rgba(31, 49, 42, 0.4);
         }
         
         .card {
@@ -94,7 +94,7 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             transition: all 0.4s ease;
-            background: white;
+            background: rgb(68, 67, 67);
         }
         
         .card-header {
@@ -157,11 +157,11 @@
         }
         
         .document-box {
-            border: 2px dashed rgba(0, 135, 81, 0.3);
+            border: 2px dashed rgba(35, 56, 48, 0.3);
             border-radius: 12px;
             padding: 20px;
             text-align: center;
-            background: rgba(230, 244, 234, 0.3);
+            background: rgba(87, 119, 96, 0.3);
             margin-bottom: 20px;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -172,7 +172,7 @@
         .document-box:hover {
             transform: translateY(-3px);
             border-color: var(--nigerian-green);
-            background: rgba(0, 135, 81, 0.05);
+            background: rgba(11, 17, 15, 0.05);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
@@ -186,7 +186,7 @@
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                         url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070') center/cover no-repeat;
             padding: 4rem 0;
-            color: white;
+            color: rgb(87, 86, 86);
             text-align: center;
             position: relative;
             margin-bottom: 3rem;
@@ -201,9 +201,9 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto 15px;
-            color: white;
+            color: rgb(95, 95, 95);
             font-size: 1.5rem;
-            box-shadow: 0 4px 10px rgba(0, 135, 81, 0.3);
+            box-shadow: 0 4px 10px rgba(24, 39, 33, 0.3);
         }
         
         .pulse {
@@ -211,9 +211,9 @@
         }
         
         @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(0, 135, 81, 0.4); }
-            70% { box-shadow: 0 0 0 12px rgba(0, 135, 81, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(0, 135, 81, 0); }
+            0% { box-shadow: 0 0 0 0 rgba(18, 34, 28, 0.4); }
+            70% { box-shadow: 0 0 0 12px rgba(18, 32, 27, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(14, 24, 20, 0); }
         }
         
         .fade-in {
@@ -231,8 +231,8 @@
             min-width: 120px;
             border: 1px solid #dee2e6;
             border-radius: 0.375rem;
-            border-bottom: 5px solid #8e9397 !important;
-            background-color: #f8f9fa;
+            border-bottom: 5px solid #06080a !important;
+            background-color: #8b8b8b;
             padding: 0.5rem 1rem;
             transition: all 0.3s ease;
             flex-shrink: 1;
@@ -241,17 +241,17 @@
 
         .step-box-active {
             min-height: 50px;
-            border: 1px solid #dee2e6;
+            border: 1px solid #797a7c;
             border-radius: 0.375rem;
             border-bottom: 5px solid var(--dark-green) !important;
             background-color: var(--nigerian-green);
-            color: white;
+            color: rgb(128, 128, 128);
             padding: 0.5rem 1rem;
             transition: all 0.3s ease;
         }
         
         .step-box .rounded-circle {
-            background: #e9ecef;
+            background: #8b8b8b;
             color: #495057;
             width: 24px;
             height: 24px;
@@ -263,7 +263,7 @@
         }
         
         .step-box-active .rounded-circle {
-            background: white;
+            background: rgb(133, 133, 133);
             color: var(--nigerian-green);
         }
         
@@ -274,7 +274,7 @@
         }
         
         .step-box-active .step-label {
-            color: white;
+            color: rgb(163, 163, 163);
         }
         
         .step-box:hover {
@@ -291,7 +291,7 @@
             border-radius: 12px;
             box-shadow: 0 6px 15px rgba(0,0,0,0.1);
             margin-bottom: 2rem;
-            background: white;
+            background: rgb(163, 163, 163);
             padding: 15px;
             overflow-x: auto;
         }
@@ -301,7 +301,7 @@
         }
         
         .step-container {
-            background-color: white;
+            background-color: rgb(163, 163, 163);
             border-radius: 16px;
             padding: 25px;
             box-shadow: 0 8px 25px rgba(0,0,0,0.08);
@@ -334,13 +334,13 @@
         @media (max-width: 767px) {
             .step-navigation-mobile .step-box {
                 background-color: var(--nigerian-green);
-                color: white;
+                color: rgb(163, 163, 163);
                 border-bottom: 5px solid var(--dark-green);
                 width: 100%;
             }
         
             .step-navigation-mobile .rounded-circle {
-                background: white;
+                background: rgb(163, 163, 163);
                 color: var(--nigerian-green);
                 width: 28px;
                 height: 28px;
@@ -349,14 +349,14 @@
             }
         
             .step-navigation-mobile .step-label {
-                color: white;
+                color: rgb(163, 163, 163);
                 font-size: 0.95rem;
             }
         }
         
         .agency-card {
             transition: all 0.3s ease;
-            border: 1px solid #e9ecef;
+            border: 1px solid #4c4d4e;
             border-radius: 12px;
             margin-bottom: 15px;
             padding: 15px;
@@ -375,7 +375,7 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background: white;
+            background: rgb(99, 99, 99);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -386,7 +386,7 @@
         }
         
         .position-badge {
-            background: rgba(0, 135, 81, 0.1);
+            background: rgba(13, 22, 19, 0.1);
             color: var(--nigerian-green);
             border-radius: 20px;
             padding: 5px 12px;
@@ -396,20 +396,20 @@
         
         .form-control:focus {
             border-color: var(--nigerian-green);
-            box-shadow: 0 0 0 0.25rem rgba(0, 135, 81, 0.15);
+            box-shadow: 0 0 0 0.25rem rgba(31, 51, 43, 0.15);
         }
         
         .upload-preview {
             width: 120px;
             height: 120px;
-            border: 2px dashed #ccc;
+            border: 2px dashed #a5a5a5;
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 15px;
             overflow: hidden;
-            background: #f8f9fa;
+            background: #585858;
         }
         
         .upload-preview img {
@@ -420,7 +420,7 @@
         
         .confirmation-item {
             padding: 12px 0;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #5f5f5f;
         }
         
         .confirmation-label {
@@ -439,7 +439,7 @@
             margin-right: 0.5rem;
             border-radius: 4px;
             border: 2px solid var(--nigerian-green);
-            background-color: white;
+            background-color: rgb(128, 128, 128);
             cursor: pointer;
             transition: all 0.2s ease-in-out;
         }
@@ -450,7 +450,7 @@
         }
         
         .big-check:focus {
-            box-shadow: 0 0 0 0.2rem rgba(0, 135, 81, 0.25);
+            box-shadow: 0 0 0 0.2rem rgba(16, 29, 24, 0.25);
         }
     </style>
 </head>
@@ -540,7 +540,7 @@
     </div>
     
     <div class="step-content">
-        <div style="color:red;" class="alert alert-info border-0 bg-light-green">
+        <div style="color:rgb(78, 0, 0);" class="alert alert-info border-0 bg-light-green">
             <h5><i class="fas fa-exclamation-circle me-2"></i> Strict Warning</h5>
             <p class="mb-0"> • Please read all instructions carefully before proceeding with your consultancy clearance.</p>
             <p class="mb-0"> As an individual candidate for a job replacement exercise it is expected that you should submit your clearance only once from the email address sent to you for a permanent and pensionable appointment at this agency! </p>
